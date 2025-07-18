@@ -1,0 +1,32 @@
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus-Dark"; /* Use your preferred icon theme */
+}
+
+window {
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1e1e2e;
+}
+
+listview {
+    columns: 5;           /* Number of columns */
+    lines: 3;             /* Number of rows */
+    spacing: 30px;        /* Space between thumbnails */
+    cycle: true;
+    layout: vertical;
+}
+
+element {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-color: transparent;  /* Hide text labels */
+}
+
+element-icon {
+    size: 150px;           /* Thumbnail size */
+    border-radius: 8px;
+}

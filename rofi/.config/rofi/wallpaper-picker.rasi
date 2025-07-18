@@ -1,0 +1,29 @@
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus-Dark"; /* or your icon theme */
+    drun-display-format: "{icon} {name}";
+}
+
+window {
+    width: 80%;
+    height: 60%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+listview {
+    columns: 5;
+    spacing: 20px;
+    lines: 3;
+    cycle: true;
+}
+
+element-icon {
+    size: 128px;   /* ICON SIZE */
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+}
+
