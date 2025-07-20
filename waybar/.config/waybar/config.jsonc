@@ -4,7 +4,7 @@
         "reload_style_on_change": true,
         "modules-left": ["hyprland/workspaces", "custom/arch", "hyprland/window"],
         "modules-center": ["clock"],
-        "modules-right": ["tray", "group/expand", "custom/notification","bluetooth", "network", "pulseaudio", "battery", "custom/poweroff"],
+        "modules-right": ["group/expand", "custom/notification","bluetooth", "network", "pulseaudio", "battery", "custom/poweroff"],
 
 
         "custom/notification": {
@@ -63,8 +63,11 @@
   "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
   "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
   "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-  "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
-},               "battery": {
+  "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click-right" : "blueman-manager"
+},               
+
+  "battery": {
             "interval":30,
             "states": {
                 "good": 95,
@@ -145,8 +148,8 @@
             "format": "{}",
             "return-type": "json",
             "interval": "once",
-            "exec": "~/.config/waybar/scripts/colorpicker.sh -j",
-            "on-click": "~/.config/waybar/scripts/colorpicker.sh",
+            "exec": "~/.config/scripts/colorpicker.sh -j",
+            "on-click": "~/.config/scripts/colorpicker.sh",
             "signal": 1
         },
         "cpu": {
@@ -177,7 +180,7 @@
             "on-click": "wlogout"
         },
   "tray": {
-            "icon-size": 20,
+            "icon-size": 18,
             "spacing": 10
         },
 } 
