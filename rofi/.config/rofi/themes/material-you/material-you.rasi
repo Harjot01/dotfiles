@@ -8,27 +8,25 @@ configuration {
       sidebar-mode: false;
 }
 
-@theme "material-colors.rasi"
+// @theme "material-colors.rasi"
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
-      bg: @surface;
-      fg: @on-surface;
       accent: @primary;
       button: @surface-container;
-
-      background-color: @bg;
-      text-color: @fg;
+      background-color: @background;
+      text-color: @foreground;
 }
 
 window {
       border-radius: 7px;
       width: 40%;
-      background-color: @bg;
-      text-color: @fg;
+      background-color: @background;
+      text-color: @foreground;
 }
 
 prompt {
-      background-color: @button;
+      background-color: @foreground;
       enabled: true;
       padding: 0.5% 32px 0% -0.5%;
       text-color: @on-secondary-fixed;
@@ -36,21 +34,21 @@ prompt {
 
 entry {
     	placeholder: "Search";
-	    background-color: @button;
+	    background-color: @foreground;
     	placeholder-color: @outline;
     	expand: true;
     	padding: 0.15% 0% 0% 0%;
-    	text-color: @fg;
+    	text-color: @background;
 }
 
 inputbar {
 	    children: [ prompt, entry ];
-    	background-color: @button;
+    	background-color: @foreground; 
     	expand: false;
     	border-radius: 6px;
     	margin: 0%;
     	padding: 10px;
-    	text-color: @fg;
+    	text-color: @background;
 }
 
 listview {
@@ -82,7 +80,7 @@ element-text {
     	horizontal-align: 0.5;
     	vertical-align: 0.5;
     	margin: 0.5% 0.5% -0.5% 0.5%;
-    	text-color: @fg;
+    	text-color: @foreground;
 }
 
 element-text, element-icon {
